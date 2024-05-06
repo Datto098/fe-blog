@@ -1,0 +1,14 @@
+:root {
+  --background: #1b1b1b;
+  --text: #fff;
+  --highlight: #f6d44b;
+  --gray: #808080;
+  --hightlight-sub: #8d7c34;
+}
+
+[data-theme="light"] {
+  --highlight: #7b01d3;
+  --hightlight-sub: #bd7fe9;
+  --background: #fff;
+  --text: #1b1b1b;
+}
