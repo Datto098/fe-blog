@@ -4,6 +4,7 @@
   --highlight: #f6d44b;
   --gray: #808080;
   --hightlight-sub: #8d7c34;
+  --light-gray: #d1d1d1;
 }
 
 [data-theme="light"] {
@@ -11,4 +12,9 @@
   --hightlight-sub: #bd7fe9;
   --background: #fff;
   --text: #1b1b1b;
+}
+
+body{
+  background-color: var(--background);
+  color: var(--text);
 }
