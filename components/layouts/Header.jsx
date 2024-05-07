@@ -31,7 +31,7 @@ export default function Header(params) {
       </ul>
     </div>
     {/* Header */}
-    <div className="px-[30px] py-[16px] bg-[var(--background)] text-[var(--text)] flex items-center justify-between">
+    <div id="header" className="px-[30px] py-[16px] bg-[var(--background)] text-[var(--text)] flex items-center justify-between">
       <div className="flex items-center justify-start gap-3">
         <div className="profile_avatar">
           <Image

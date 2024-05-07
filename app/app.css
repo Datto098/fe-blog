@@ -55,6 +55,10 @@ code > [data-line]::before {
   color: gray;
 }
 
+code > span:first-child {
+  margin-left: 52px;
+}
+
 code[data-line-numbers-max-digits='2'] > [data-line]::before {
   width: 2rem;
 }
