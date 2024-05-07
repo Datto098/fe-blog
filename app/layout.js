@@ -1,8 +1,13 @@
+
+import React from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./app.css";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
+import { ThemeContextProvider } from "@/context/ThemeContext";
+import ThemeProvider from "@/provider/ThemeProvider";
+import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,12 +17,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body className={`${inter.className}`}>
-        <Header/>
-        {children}
-        <Footer/>
-        </body>
+        <ThemeContextProvider>
+          <ThemeProvider>
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </ThemeContextProvider>
+        <Script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></Script>
+      </body>
     </html>
   );
 }

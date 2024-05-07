@@ -6,7 +6,7 @@ import Dribble from "../svg/Dribble";
 import Github from "../svg/Github";
 
 export default function Footer(params) {
-  return <div className="px-[30px] py-[16px] text-[var(--background)]">
+  return <div className="px-[30px] py-[16px] text-[var(--background)] bg-[var(--background)]">
     <div className="bg-[var(--highlight)] pt-[60px] rounded-2xl">
       <h3 className="text-[28px] mb-4 font-[600] text-center">Interesting Stories | Updates | Guides</h3>
       <p className="text-center max-w-[860px] mb-4 mx-auto text-wrap">Subscribe to learn about new technology and updates. Join over 5000+ members community to stay up to date with latest news.</p>
