@@ -11,7 +11,7 @@ export default function Header(params) {
   return (
     <>
     {/* Fixed nav */}
-    <div className="nav z-20 fixed top-[47px] left-[50%] translate-x-[-50%] translate-y-[-50%] px-[40px] py-[12px] rounded-[100px] bg-[var(--light-gray)] text-black backdrop-blur-sm border border-black">
+    <div className="nav z-20 fixed top-[47px] left-[50%] translate-x-[-50%] translate-y-[-50%] px-[40px] py-[12px] rounded-[100px] bg-[var(--light-gray)] text-[var(--text)] backdrop-blur-sm border border-[var(--text)]">
       <ul className="flex items-center justify-center gap-3 font-[500]">
         <li>
           <Link href={"/"}>Home</Link>
