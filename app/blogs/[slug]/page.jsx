@@ -99,7 +99,7 @@ export default function page(params) {
               ref={tableContentViewParentRef}
             >
               <div
-                className={`p-4 border-2 border-[var(--gray)] `}
+                className={`p-4 border-2 border-[var(--gray)] bg-[var(--background)] text-[var(--text)]`}
                 ref={tableContentViewRef}
               >
                 <div
